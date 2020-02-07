@@ -13,7 +13,7 @@ class App extends React.Component {
   }
 
   fetchEventData = () => {
-    var url = 'https://app.ticketmaster.com/discovery/v2/events.json?dmaId=' + this.state.placeId + '&apikey=Soht3hnKVbBvmjfivGMLw4SqZ5D35D6F';
+    var url = 'https://app.ticketmaster.com/discovery/v2/events.json?dmaId=' + this.state.placeId + '&apikey=' + apiKey;
     fetch(url)
       .then((result) => {
         result.json()
