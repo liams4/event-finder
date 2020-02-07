@@ -1,0 +1,270 @@
+200_All of US_
+212_Abilene - Sweetwater_
+213_Albany - Schenectady - Troy_
+214_Albany, GA_
+215_Albuquerque - Santa Fe_
+216_Alexandria, LA_
+217_Alpena_
+218_Amarillo_
+219_Anchorage_
+220_Atlanta_
+221_Augusta_
+222_Austin_
+223_Bakersfield_
+224_Baltimore_
+225_Bangor_
+226_Baton Rouge_
+227_Beaumont - Port Arthur_
+228_Bend, OR_
+229_Billings_
+230_Biloxi - Gulfport_
+231_Binghamton_
+232_Birmingham (Anniston and Tuscaloosa)_
+233_Bluefield - Beckley - Oak Hill_
+234_Boise_
+235_Boston (Manchester)_
+236_Bowling Green_
+237_Buffalo_
+238_Burlington - Plattsburgh_
+239_Butte - Bozeman_
+240_Casper - Riverton_
+241_Cedar Rapids - Waterloo & Dubuque_
+242_Champaign & Springfield - Decatur_
+243_Charleston, SC_
+244_Charleston-Huntington_
+245_Charlotte_
+246_Charlottesville_
+247_Chattanooga_
+248_Cheyenne - Scottsbluff_
+249_Chicago_
+250_Chico - Redding_
+251_Cincinnati_
+252_Clarksburg - Weston_
+253_Cleveland_
+254_Colorado Springs - Pueblo_
+255_Columbia - Jefferson City_
+256_Columbia, SC_
+257_Columbus - Tupelo - West Point_
+258_Columbus, GA_
+259_Columbus, OH_
+260_Corpus Christi_
+261_Dallas - Fort Worth_
+262_Davenport - Rock Island - Moline_
+263_Dayton_
+264_Denver_
+265_Des Moines - Ames_
+266_Detroit_
+267_Dothan_
+268_Duluth - Superior_
+269_El Paso_
+270_Elmira_
+271_Erie_
+272_Eugene_
+273_Eureka_
+274_Evansville_
+275_Fairbanks_
+276_Fargo - Valley City_
+277_Flint - Saginaw - Bay City_
+278_Florence - Myrtle Beach_
+279_Fort Myers - Naples_
+280_Fort Smith - Fayetteville - Springdale - Rogers_
+281_Fort Wayne_
+282_Fresno - Visalia_
+283_Gainesville_
+284_Glendive_
+285_Grand Junction - Montrose_
+286_Grand Rapids - Kalamazoo - Battle Creek_
+287_Great Falls_
+288_Green Bay - Appleton_
+289_Greensboro - High Point - Winston-Salem_
+290_Greenville - New Bern - Washington_
+291_Greenville - Spartansburg - Asheville - Anderson_
+292_Greenwood - Greenville_
+293_Harlingen - Weslaco - Brownsville - McAllen_
+294_Harrisburg - Lancaster - Lebanon - York_
+295_Harrisonburg_
+296_Hartford & New Haven_
+297_Hattiesburg - Laurel_
+298_Helena_
+299_Honolulu_
+300_Houston_
+301_Huntsville - Decatur (Florence)_
+302_Idaho Falls - Pocatello_
+303_Indianapolis_
+304_Jackson, MS_
+305_Jackson, TN_
+306_Jacksonville_
+307_Johnstown - Altoona_
+308_Jonesboro_
+309_Joplin - Pittsburg_
+310_Juneau_
+311_Kansas City_
+312_Knoxville_
+313_La Crosse - Eau Claire_
+314_Lafayette, IN_
+315_Lafayette, LA_
+316_Lake Charles_
+317_Lansing_
+318_Laredo_
+319_Las Vegas_
+320_Lexington_
+321_Lima_
+322_Lincoln & Hastings - Kearney_
+323_Little Rock - Pine Bluff_
+324_Los Angeles_
+325_Louisville_
+326_Lubbock_
+327_Macon_
+328_Madison_
+329_Mankato_
+330_Marquette_
+331_Medford - Klamath Falls_
+332_Memphis_
+333_Meridian_
+334_Miami - Fort Lauderdale_
+335_Milwaukee_
+336_Minneapolis - Saint Paul_
+337_Minot - Bismarck - Dickinson_
+338_Missoula_
+339_Mobile - Pensacola (Fort Walton Beach)_
+340_Monroe - El Dorado_
+341_Monterey - Salinas_
+342_Montgomery (Selma)_
+343_Nashville_
+344_New Orleans_
+345_New York_
+346_Norfolk - Portsmouth - Newport News_
+347_North Platte_
+348_Odessa - Midland_
+349_Oklahoma City_
+350_Omaha_
+351_Orlando - Daytona Beach - Melbourne_
+352_Ottumwa - Kirksville_
+353_Paducah - Cape Girardeau - Harrisburg - Mt Vernon_
+354_Palm Springs_
+355_Panama City_
+356_Parkersburg_
+357_Peoria - Bloomington_
+358_Philadelphia_
+359_Phoenix_
+360_Pittsburgh_
+361_Portland - Auburn_
+362_Portland, OR_
+363_Presque Isle_
+364_Providence - New Bedford_
+365_Quincy - Hannibal - Keokuk_
+366_Raleigh - Durham (Fayetteville)_
+367_Rapid City_
+368_Reno_
+369_Richmond - Petersburg_
+370_Roanoke - Lynchburg_
+371_Rochester - Mason City - Austin_
+372_Rochester, NY_
+373_Rockford_
+374_Sacramento - Stockton - Modesto_
+375_Saint Joseph_
+376_Saint Louis_
+377_Salisbury_
+378_Salt Lake City_
+379_San Angelo_
+380_San Antonio_
+381_San Diego_
+382_San Francisco - Oakland - San Jose_
+383_Santa Barbara - Santa Maria - San Luis Obispo_
+384_Savannah_
+385_Seattle - Tacoma_
+386_Sherman - Ada_
+387_Shreveport_
+388_Sioux City_
+389_Sioux Falls (Mitchell)_
+390_South Bend - Elkhart_
+391_Spokane_
+392_Springfield - Holyoke_
+393_Springfield, MO_
+394_Syracuse_
+395_Tallahassee - Thomasville_
+396_Tampa - Saint Petersburg (Sarasota)_
+397_Terre Haute_
+398_Toledo_
+399_Topeka_
+400_Traverse City - Cadillac_
+401_Tri-Cities, TN-VA_
+402_Tucson (Sierra Vista)_
+403_Tulsa_
+404_Twin Falls_
+405_Tyler - Longview (Lufkin & Nacogdoches)_
+406_Utica_
+407_Victoria_
+408_Waco - Temple - Bryan_
+409_Washington DC (Hagerstown)_
+410_Watertown_
+411_Wausau - Rhinelander_
+412_West Palm Beach - Fort Pierce_
+413_Wheeling - Steubenville_
+414_Wichita - Hutchinson_
+415_Wichita Falls & Lawton_
+416_Wilkes Barre - Scranton_
+417_Wilmington_
+418_Yakima - Pasco - Richland - Kennewick_
+419_Youngstown_
+420_Yuma - El Centro_
+421_Zanesville_
+422_Northern New Jersey_
+500_All of Canada_
+501_Barrie-Orillia_
+502_Belleville-Peterborough_
+503_Owen Sound_
+504_Burnaby-New Westminster-Surrey_
+505_Calgary-Banff_
+506_Edmonton_
+507_Fraser Valley_
+508_Hamilton-Niagara_
+509_Kitchener-Waterloo_
+510_London-Sarnia_
+511_Mississauga-Oakville_
+512_Newfoundland_
+513_NWT_
+514_New Brunswick_
+515_Northern Ontario_
+516_Nova Scotia_
+517_Nunavit_
+518_Okanagan-Kootenays_
+519_Ottawa-Gatineau_
+520_PEI_
+521_Prince George-North_
+522_Montreal and Surrounding Area_
+523_Red Deer_
+524_Saskatchewan_
+527_Toronto_
+528_Vancouver_
+529_Sunshine Coast-Islands_
+530_Winnipeg-Brandon_
+531_Yukon_
+601_All of United Kingdom_
+602_London_
+603_South_
+604_Midlands and Central_
+605_Wales and North West_
+606_North and North East_
+607_Scotland_
+608_All of Ireland_
+609_Northern Ireland_
+610_Germany_
+611_Netherlands_
+612_Sweden_
+613_Turkey_
+701_All of Australia_
+702_New South Wales/Australian Capital Territory_
+703_Queensland_
+704_Western Australia_
+705_Victoria/Tasmania_
+750_All of New Zealand_
+751_North Island_
+752_South Island_
+801_All of Mexico_
+802_Mexico City and Metropolitan Area_
+803_Monterrey_
+804_Guadalajara_
+901_All of Spain_
+902_Barcelona_
+903_Madrid_
