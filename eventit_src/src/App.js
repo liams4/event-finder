@@ -1,6 +1,7 @@
 import React from 'react';
 import InputBar from './InputBar';
 import './App.css';
+import {apiKey} from './apiKey.js'; 
 
 class App extends React.Component {
   constructor(props) {
@@ -48,11 +49,3 @@ class App extends React.Component {
 
 
 export default App;
-
-// basically the goal of the app is to suggest some events to a user based on their city.
-// maybe have it so multiple things can be selected
-
-// buttons of the different events to suggest, with an option to type in your own.
-
-// we'll just match the names. being occasionally wrong is ok. special cases for seattle or other cities that might be commonly input
-// if the input city is contained in one of the ticketmaster city name strings. should be good.
