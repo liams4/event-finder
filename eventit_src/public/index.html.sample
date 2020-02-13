@@ -42,6 +42,6 @@
 
 
     <!-- add your api key below-->
-    <script src='https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places' async defer></script>
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDo9b-aQOCIXpLs_tN96Z7z_6FvZkekRus&libraries=places' async defer></script>
   </body>
 </html>
