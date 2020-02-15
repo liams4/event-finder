@@ -10,7 +10,7 @@ class App extends React.Component {
 
     this.state = {
       placeId: null,
-      results: null
+      events: []
     };
   }
 
@@ -23,16 +23,18 @@ class App extends React.Component {
       .then((data) => {
         console.log(data);
         data._embedded.events.forEach(event => {
-
           let eventData = {name: event.name, 
+                           image: event.images ? event.images[0].url : 'NA',
                            date: event.dates ? event.dates.start.localDate : 'NA',
                            startTime: event.dats ? event.dates.start.localTime : 'NA', 
                            minPrice: event.priceRanges ? event.priceRanges[0].min : 'NA',
                            maxPrice: event.priceRanges ? event.priceRanges[0].max : 'NA',
                            url: event.url ? event.url : 'NA'}
           console.log(eventData);
+          let updatedEvents = this.state.events.concat([eventData]);
+          this.setState({events: updatedEvents});
         });
-        this.setState({results: 'hello'});
+        // set state to show its finished?
       });
     }).catch((error) => {
       console.error(error);
@@ -53,7 +55,7 @@ class App extends React.Component {
         {this.state.place !== null && <button onClick={() => {
           this.fetchEventData();
         }}>Find Events</button>}
-        {this.state.results !== null && <Results/>}
+        {this.state.events !== null && <Results events={this.state.events}/>}
       </div>
     );
   }
