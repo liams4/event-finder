@@ -16,8 +16,9 @@ class App extends React.Component {
     };
   }
 
-  fetchEventData = () => {
-    var url = 'https://app.ticketmaster.com/discovery/v2/events.json?classificationName=arts&theatre&dmaId=' + this.state.placeId + '&apikey=' + apiKey;
+  fetchEventData = (eventType) => {
+    var url = 'https://app.ticketmaster.com/discovery/v2/events.json?classificationName=' + eventType + '&dmaId=' + this.state.placeId +
+      '&apikey=' + apiKey;
   
     fetch(url)
       .then((result) => {
@@ -51,12 +52,15 @@ class App extends React.Component {
         </header>
         <InputBar updatePlaceId={(newPlace) => {
           console.log(newPlace);
-            this.setState({placeId: newPlace});
+          this.setState({placeId: newPlace});
         }}/>
         {this.state.place !== null && <button onClick={() => {
           this.setState({shouldDisplayEventTypes: true});
         }}>Find Events</button>}
-        {this.state.shouldDisplayEventTypes && <EventOptions/>}
+        {this.state.shouldDisplayEventTypes && <EventOptions findEvents={(eventType) => {
+            console.log(eventType);
+            this.fetchEventData(eventType);
+        }}/>}
         {this.state.events !== null && <Results events={this.state.events}/>}
       </div>
     );
