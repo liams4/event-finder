@@ -11,8 +11,9 @@ class App extends React.Component {
 
     this.state = {
       placeId: null,
-      shouldDisplayEventTypes : false,
-      events: []
+      shouldDisplayEventTypes: false,
+      events: [],
+      noEventsMessage: null
     };
   }
 
@@ -24,21 +25,38 @@ class App extends React.Component {
       .then((result) => {
         result.json()
       .then((data) => {
-        data._embedded.events.forEach(event => {
-          
-          let eventData = {name: event.name, 
-                           image: event.images ? event.images[0].url : 'NA',
-                           date: event.dates ? event.dates.start.localDate : 'NA',
-                           startTime: event.dates ? event.dates.start.localTime : 'NA', 
-                           minPrice: event.priceRanges ? event.priceRanges[0].min : 'NA',
-                           maxPrice: event.priceRanges ? event.priceRanges[0].max : 'NA',
-                           url: event.url ? event.url : 'NA'}
-          console.log(eventData);
-          let updatedEvents = this.state.events.concat([eventData]);
-          this.setState({events: updatedEvents});
-        });
+        console.log(data);
+        if (data._embedded === undefined) {
+          if (eventType === '') {
+            this.setState({noEventsMessage: 'We currently can\'t find any upcoming events for this location :('});
+          } else {
+            if (eventType === 'arts&theatre') {
+              eventType = 'arts & theatre';
+            } else if (eventType === 'miscellaneous') {
+              eventType = '"other"';
+            } 
+
+            this.setState({noEventsMessage: 'We currently can\'t find any ' + eventType + 
+                                            ' events for this location. Maybe try a different event type?'});
+          }
+        } else {
+          data._embedded.events.forEach(event => {
+            
+            let eventData = {name: event.name, 
+                            image: event.images ? event.images[0].url : 'NA',
+                            date: event.dates ? event.dates.start.localDate : 'NA',
+                            startTime: event.dates ? event.dates.start.localTime : 'NA',
+                            minPrice: event.priceRanges ? event.priceRanges[0].min : 'NA',
+                            maxPrice: event.priceRanges ? event.priceRanges[0].max : 'NA',
+                            url: event.url ? event.url : 'NA'}
+            let updatedEvents = this.state.events.concat([eventData]);
+            this.setState({events: updatedEvents});
+          });
+        }
       });
     }).catch((error) => {
+      this.setState({noEventsMessage: 'We don\'t have information about events at this location.' + 
+                                      'Please try your nearest large city instead.'});
       console.error(error);
     });
   }
@@ -61,7 +79,8 @@ class App extends React.Component {
             console.log(eventType);
             this.fetchEventData(eventType);
         }}/>}
-        {this.state.events !== null && <Results events={this.state.events}/>}
+        {this.state.events !== [] && <Results events={this.state.events}/>}
+        {this.state.noEventsMessage !== null && this.state.noEventsMessage}
       </div>
     );
   }

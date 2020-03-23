@@ -20,6 +20,9 @@ class EventOptions extends React.Component{
                         this.props.findEvents('arts&theatre');
                     }}>Arts &amp; Theatre</button>
                     <button onClick={() => {
+                        this.props.findEvents('film');
+                    }}>Film</button> 
+                    <button onClick={() => {
                         this.props.findEvents('miscellaneous');
                     }}>Other</button> 
                 </div>
