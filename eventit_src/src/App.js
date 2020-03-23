@@ -11,7 +11,6 @@ class App extends React.Component {
 
     this.state = {
       placeId: null,
-      shouldDisplayEventTypes: false,
       events: [],
       noEventsMessage: null
     };
@@ -27,18 +26,7 @@ class App extends React.Component {
       .then((data) => {
         console.log(data);
         if (data._embedded === undefined) {
-          if (eventType === '') {
-            this.setState({noEventsMessage: 'We currently can\'t find any upcoming events for this location :('});
-          } else {
-            if (eventType === 'arts&theatre') {
-              eventType = 'arts & theatre';
-            } else if (eventType === 'miscellaneous') {
-              eventType = '"other"';
-            } 
-
-            this.setState({noEventsMessage: 'We currently can\'t find any ' + eventType + 
-                                            ' events for this location. Maybe try a different event type?'});
-          }
+          this.createNoEventsMessage(eventType);
         } else {
           data._embedded.events.forEach(event => {
             
@@ -55,10 +43,22 @@ class App extends React.Component {
         }
       });
     }).catch((error) => {
-      this.setState({noEventsMessage: 'We don\'t have information about events at this location.' + 
+      this.setState({noEventsMessage: 'We unfortunately don\'t have information about events at this location.' + 
                                       'Please try your nearest large city instead.'});
       console.error(error);
     });
+  }
+
+  createNoEventsMessage = (eventType) => {
+    if (eventType === 'arts&theatre') {
+      eventType = 'arts & theatre';
+    } else if (eventType === 'miscellaneous') {
+      eventType = '"other"';
+    } 
+
+    let message = 'We currently can\'t find any upcoming ' + eventType + ' events for this location. Maybe try a ';
+    message += eventType === '' ? 'nearby location?' : 'different event type?';
+    this.setState({noEventsMessage: message});
   }
 
   render = () => {
@@ -71,12 +71,13 @@ class App extends React.Component {
         <InputBar updatePlaceId={(newPlace) => {
           console.log(newPlace);
           this.setState({placeId: newPlace});
+          this.setState({events: []});
+          this.setState({noEventsMessage: null});
         }}/>
-        {this.state.place !== null && <button onClick={() => {
-          this.setState({shouldDisplayEventTypes: true});
-        }}>Find Events</button>}
-        {this.state.shouldDisplayEventTypes && <EventOptions findEvents={(eventType) => {
+        {this.state.placeId !== null && <EventOptions findEvents={(eventType) => {
             console.log(eventType);
+            this.setState({events: []});
+            this.setState({noEventsMessage: null});
             this.fetchEventData(eventType);
         }}/>}
         {this.state.events !== [] && <Results events={this.state.events}/>}
