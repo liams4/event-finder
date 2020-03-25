@@ -10,7 +10,7 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      placeId: null,
+      placeId: -1,
       events: [],
       noEventsMessage: null
     };
@@ -36,6 +36,7 @@ class App extends React.Component {
                             startTime: event.dates ? event.dates.start.localTime : 'NA',
                             minPrice: event.priceRanges ? event.priceRanges[0].min : 'NA',
                             maxPrice: event.priceRanges ? event.priceRanges[0].max : 'NA',
+                            venue: event._embedded.venues ? event._embedded.venues[0].name : 'NA', // if this doesn't work try the longitude
                             url: event.url ? event.url : 'NA'}
             let updatedEvents = this.state.events.concat([eventData]);
             this.setState({events: updatedEvents});
@@ -43,8 +44,6 @@ class App extends React.Component {
         }
       });
     }).catch((error) => {
-      this.setState({noEventsMessage: 'We unfortunately don\'t have information about events at this location.' + 
-                                      'Please try your nearest large city instead.'});
       console.error(error);
     });
   }
@@ -72,9 +71,14 @@ class App extends React.Component {
           console.log(newPlace);
           this.setState({placeId: newPlace});
           this.setState({events: []});
-          this.setState({noEventsMessage: null});
+          if (newPlace === -1) {
+            this.setState({noEventsMessage: 'We unfortunately don\'t have information about events at this location.' + 
+                                            'Please try your nearest large city instead.'});
+          } else {
+            this.setState({noEventsMessage: null});
+          }
         }}/>
-        {this.state.placeId !== null && <EventOptions findEvents={(eventType) => {
+        {this.state.placeId !== -1 && <EventOptions findEvents={(eventType) => {
             console.log(eventType);
             this.setState({events: []});
             this.setState({noEventsMessage: null});

@@ -14,7 +14,8 @@ class EventResults extends React.Component{
                             <div>{event.startTime}</div>
                             <div>{event.minPrice}</div>
                             <div>{event.maxPrice}</div>
-                            <a href='#'>event.url</a>
+                            <div>{event.venue}</div>
+                            <a href="#">event.url</a>
                         </li>
                     );
                 })}
