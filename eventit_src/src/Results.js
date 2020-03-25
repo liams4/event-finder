@@ -6,6 +6,8 @@ class EventResults extends React.Component{
         return(
             <ul>
                 {this.props.events.map(event => {
+                    let venueLink = 'https://www.google.com/maps/search/?api=1&query=' + event.venue;
+                    console.log(venueLink);
                     return (
                         <li key={event}>
                             <div>{event.name}</div>
@@ -14,7 +16,7 @@ class EventResults extends React.Component{
                             <div>{event.startTime}</div>
                             <div>{event.minPrice}</div>
                             <div>{event.maxPrice}</div>
-                            <div>{event.venue}</div>
+                            <a href={venueLink} target='_blank'>{event.venue}</a>
                             <a href="#">event.url</a>
                         </li>
                     );

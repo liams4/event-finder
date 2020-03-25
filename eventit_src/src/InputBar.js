@@ -26,7 +26,7 @@ class InputBar extends React.Component{
             }
             
             if (!found) {
-                this.props.updatePlaceId(-1); // The Ticketmaster Discovery API can't find events for parameter place
+                this.props.updatePlaceId(-1); // The Ticketmaster Discovery API can't find events for the place passed as a parameter
             }
             
         });
