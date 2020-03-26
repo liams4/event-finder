@@ -10,14 +10,14 @@ class EventResults extends React.Component{
                     console.log(venueLink);
                     return (
                         <li key={event}>
-                            <div>{event.name}</div>
+                            <div id='event-name'>{event.name}</div>
                             <img src={event.image} alt={event.name}/>
-                            <div>{event.date}</div>
-                            <div>{event.startTime}</div>
-                            <div>{event.minPrice}</div>
-                            <div>{event.maxPrice}</div>
-                            <a href={venueLink} target='_blank'>{event.venue}</a>
-                            <a href="#">event.url</a>
+                            <div id='date'>{event.date}</div>
+                            <div id='time'>{event.startTime}</div>
+                            <div className='price'>{event.minPrice}</div>
+                            <div className='price'>{event.maxPrice}</div>
+                            <a id='venue' href={venueLink} target='_blank'>{event.venue}</a>
+                            <a id='link' href={event.url}>Link</a>
                         </li>
                     );
                 })}

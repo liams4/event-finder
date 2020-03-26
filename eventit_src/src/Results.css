@@ -1,3 +1,49 @@
 li {
     display: flex;
 }
+
+img {
+    height: 200px;
+    width: 300px;
+    max-width: 300px;
+    max-height: 200px;
+}
+
+ul {
+    padding-inline-end: 40px;
+}
+
+.wide-table-element {
+    width: 200px;
+    height: 200px;
+}
+
+.narrow-table-element {
+    width: 50px;
+    height: 200px;
+    text-align: left;
+}
+
+#event-name {
+    width: 250px;
+}
+
+#date {
+    width: 100px;
+}
+
+#time {
+    width: 100px;
+}
+
+.price {
+    width: 50px;
+}
+
+#venue {
+    width: 200px;
+}
+
+#link {
+    width: 50px;
+}

@@ -36,7 +36,7 @@ class App extends React.Component {
                             startTime: event.dates ? event.dates.start.localTime : 'NA',
                             minPrice: event.priceRanges ? event.priceRanges[0].min : 'NA',
                             maxPrice: event.priceRanges ? event.priceRanges[0].max : 'NA',
-                            venue: event._embedded.venues ? event._embedded.venues[0].name : 'NA', // if this doesn't work try the longitude
+                            venue: event._embedded.venues ? event._embedded.venues[0].name : 'NA',
                             url: event.url ? event.url : 'NA'}
             let updatedEvents = this.state.events.concat([eventData]);
             this.setState({events: updatedEvents});
