@@ -1,9 +1,9 @@
 import React from 'react';
 import InputBar from './InputBar';
-import Results from './Results';
 import EventOptions from './EventOptions';
 import './App.css';
 import {apiKey} from './apiKey.js'; 
+import EventResults from './Results';
 
 class App extends React.Component {
   constructor(props) {
@@ -72,19 +72,19 @@ class App extends React.Component {
           this.setState({placeId: newPlace});
           this.setState({events: []});
           if (newPlace === -1) {
-            this.setState({noEventsMessage: 'We unfortunately don\'t have information about events at this location.' + 
+            this.setState({noEventsMessage: 'We unfortunately don\'t have information about events at this location. ' + 
                                             'Please try your nearest large city instead.'});
           } else {
             this.setState({noEventsMessage: null});
           }
         }}/>
         {this.state.placeId !== -1 && <EventOptions findEvents={(eventType) => {
-            console.log(eventType);
             this.setState({events: []});
             this.setState({noEventsMessage: null});
             this.fetchEventData(eventType);
         }}/>}
-        {this.state.events !== [] && <Results events={this.state.events}/>}
+        
+        {this.state.events.length > 0 && <EventResults events={this.state.events}/>}
         {this.state.noEventsMessage !== null && this.state.noEventsMessage}
       </div>
     );

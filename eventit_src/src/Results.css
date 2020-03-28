@@ -1,5 +1,9 @@
 li {
     display: flex;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 img {
@@ -7,43 +11,93 @@ img {
     width: 300px;
     max-width: 300px;
     max-height: 200px;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 ul {
     padding-inline-end: 40px;
 }
 
-.wide-table-element {
-    width: 200px;
-    height: 200px;
-}
-
-.narrow-table-element {
-    width: 50px;
-    height: 200px;
-    text-align: left;
-}
-
-#event-name {
+.name {
     width: 250px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
 }
 
-#date {
-    width: 100px;
+.date {
+    width: 115px;
+    height: 200px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#time {
-    width: 100px;
+.time {
+    width: 90px;
+    height: 200px;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .price {
-    width: 50px;
+    width: 120px;
+    height: 200px;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#venue {
+.venue {
     width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
-#link {
+.link {
+    height: 200px;
     width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.result-header {
+    height: 25px;
+    border-bottom: 0px;
+}
+
+#name-result-header {
+    padding-right: 302px;
+    border-right: 0px;
+}
+
+#header {
+    margin-bottom: 0px;
 }
