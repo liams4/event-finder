@@ -1,6 +1,5 @@
 li {
     display: flex;
-    margin-bottom: 50px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -11,13 +10,12 @@ img {
     width: 300px;
     max-width: 300px;
     max-height: 200px;
-    border-right: 1px solid black;
-    border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
 
 ul {
-    padding-inline-end: 40px;
+    position: absolute;
+    left: 31px;
 }
 
 .name {
@@ -27,7 +25,6 @@ ul {
     align-items: center;
     justify-content: center;
     border-right: 1px solid black;
-    border-top: 1px solid black;
     border-bottom: 1px solid black;
     border-left: 1px solid black;
 }
@@ -37,7 +34,6 @@ ul {
     height: 200px;
     border-left: 1px solid black;
     border-right: 1px solid black;
-    border-top: 1px solid black;
     border-bottom: 1px solid black;
     display: flex;
     justify-content: center;
@@ -48,7 +44,6 @@ ul {
     width: 90px;
     height: 200px;
     border-right: 1px solid black;
-    border-top: 1px solid black;
     border-bottom: 1px solid black;
     display: flex;
     justify-content: center;
@@ -59,7 +54,6 @@ ul {
     width: 120px;
     height: 200px;
     border-right: 1px solid black;
-    border-top: 1px solid black;
     border-bottom: 1px solid black;
     display: flex;
     justify-content: center;
@@ -73,7 +67,6 @@ ul {
     align-items: center;
     justify-content: center;
     border-right: 1px solid black;
-    border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
 
@@ -83,18 +76,17 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top: 1px solid black;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
 }
 
 .result-header {
     height: 25px;
-    border-bottom: 0px;
+    border-top: 1px solid black;
 }
 
 #name-result-header {
-    padding-right: 302px;
+    padding-right: 301px;
     border-right: 0px;
 }
 
