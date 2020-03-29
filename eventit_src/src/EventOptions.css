@@ -1,0 +1,15 @@
+button {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-right: 5px;
+    font-size: 15px;
+    background-color: lavender;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#buttons {
+    margin-bottom: 15px;
+}

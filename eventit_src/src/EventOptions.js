@@ -1,4 +1,5 @@
 import React from 'react';
+import './EventOptions.css'
 
 class EventOptions extends React.Component{
 
@@ -6,7 +7,7 @@ class EventOptions extends React.Component{
         return(
             <div>
                 <h2>What type of events would you like to find?</h2>
-                <div>
+                <div id='buttons'>
                     <button onClick={() => {
                         this.props.findEvents('');
                     }}>Any Event</button>

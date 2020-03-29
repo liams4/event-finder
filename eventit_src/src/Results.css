@@ -1,8 +1,8 @@
 li {
     display: flex;
-    display: flex;
     align-items: center;
     text-align: center;
+    background-color: lavender;
 }
 
 img {
@@ -80,14 +80,21 @@ ul {
     border-right: 1px solid black;
 }
 
+
+
 .result-header {
     height: 25px;
     border-top: 1px solid black;
 }
 
-#name-result-header {
+#name-header {
     padding-right: 301px;
     border-right: 0px;
+    border-radius: 5px 0px 0px 0px;
+}
+
+#link-header {
+    border-radius: 0px 5px 0px 0px;
 }
 
 #header {

@@ -62,8 +62,8 @@ class App extends React.Component {
 
   render = () => {
     return (
-      <div className="App">
-        <header className="App-header">
+      <div>
+        <header>
           <h1>Eventit</h1>
           <h2>Welcome to Eventit! Eventit helps you find cool events near to you.</h2>
         </header>
