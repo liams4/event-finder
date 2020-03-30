@@ -1,5 +1,6 @@
 import React from 'react';
-import Autocomplete from 'react-google-autocomplete';
+// autocomplete search bar for locations. I didn't create this, it can be found here: https://github.com/ErrorPro/react-google-autocomplete. 
+import Autocomplete from 'react-google-autocomplete'; 
 import './InputBar.css';
 
 class InputBar extends React.Component{
