@@ -1,9 +1,9 @@
 # Eventit
-This web app helps users find various events at a location of their choice. Users are prompted for their location and the type of events that they are interested in. Events of the event type that the user selects are then displayed along with information about the events. Events are found through the [Ticketmaster Discovery API] (https://developer.ticketmaster.com/products-and-docs/apis/discovery-api/v2/). 
+This web app helps users find various events at a location of their choice. Users are prompted for their location and the type of events that they are interested in. Events of the event type that the user selects are then displayed along with information about the events. Events are found through the [Ticketmaster Discovery API](https://developer.ticketmaster.com/products-and-docs/apis/discovery-api/v2/). 
 
 ## Running Eventit
 If you'd like to run this app, there are a few steps involved because my API keys cannot be published on GitHub. 
-* Register for a [Ticketmaster Discovery API key] (https://developer-acct.ticketmaster.com/user/register) and a [Google Cloud API key] (https://developers.google.com/places/web-service/get-api-key). 
+* Register for a [Ticketmaster Discovery API key](https://developer-acct.ticketmaster.com/user/register) and a [Google Cloud API key](https://developers.google.com/places/web-service/get-api-key). 
 * Enable the "Places API" and "Maps JavaScript API" on your Google Cloud account. 
 * Clone this repository.
 * Create a JavaScript file called `apiKey.js` containing only `export const key = your_ticketmaster_discovery_api_key` in the `eventit/eventit_src/src/` folder.
